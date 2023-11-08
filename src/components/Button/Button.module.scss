@@ -9,7 +9,6 @@
     gap: 0.5rem; // default gap
 }
 
-
 // Common styles for label
 .btnLabel {
     font-size: 0.75rem;
@@ -39,4 +38,19 @@
 
 .sm {
     padding: 0.5rem;
+}
+
+.icon {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    text-align: inherit;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    color: inherit;
+    font: inherit;
 }

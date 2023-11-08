@@ -4,6 +4,7 @@ import TextInput from "../TextInput/TextInput";
 import Select from "../Select/Select";
 import { QuestionType } from "../../types/form";
 import { AnswerTypeOptions } from "../../constants/form";
+import Button from "../Button/Button";
 
 interface QuestionCardProps extends QuestionType {
   total?: number;
@@ -15,8 +16,8 @@ const QuestionCard: FC<QuestionCardProps> = ({
   question,
   answerType,
   answerValue,
-  total,
-  index,
+  total = 0,
+  index = 0,
   onDelete,
   onFieldValueChange,
 }) => {
@@ -54,11 +55,27 @@ const QuestionCard: FC<QuestionCardProps> = ({
       <div className={styles.controlsWrap}>
         <div className={styles.indexText}>{`${index + 1} of ${total}`}</div>
         <div className={styles.actionsWrap}>
-          {/* <div><img src="/img/misc-up.svg" alt="Up" /></div>
-                    <div><img src="/img/misc-down.svg" alt="Down" /></div> */}
-          <div onClick={() => onDelete(index)}>
-            <img src="/img/trash-icon.svg" alt="Delete" />
+          {/* <div>
+            <Button
+              variant="icon"
+              icon={<img src="/img/misc-up.svg" alt="Delete" />}
+            />
           </div>
+          <div>
+            <Button
+              variant="icon"
+              icon={<img src="/img/misc-down.svg" alt="Delete" />}
+            />
+          </div> */}
+          {total > 1 && (
+            <div>
+              <Button
+                variant="icon"
+                onClick={() => onDelete(index)}
+                icon={<img src="/img/trash-icon.svg" alt="Delete" />}
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>
