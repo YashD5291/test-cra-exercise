@@ -1,0 +1,42 @@
+.button {
+    border: 0;
+    cursor: pointer;
+}
+
+.btnLabelWrap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; // default gap
+}
+
+
+// Common styles for label
+.btnLabel {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.8125rem; /* 108.333% */
+    text-transform: uppercase;
+}
+
+// Primary Light
+.primary-light {
+    background-color: var(--color-whitesmoke);
+    color: var(--white, #fff);
+}
+
+// Primary-filled
+.primary-filled {
+    background-color: var(--fueled-red);
+    color: var(--white, #fff);
+}
+
+.primary-outlined {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: var(--fueled-white);
+    color: var(--fueled-red);
+}
+
+.sm {
+    padding: 0.5rem;
+}

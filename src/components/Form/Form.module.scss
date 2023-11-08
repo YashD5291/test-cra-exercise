@@ -1,0 +1,39 @@
+@import './../../styles/breakpoints.scss';
+
+.questionnaireFormWrap {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    max-width: 95%;
+
+    @media #{$sm} {
+        max-width: 67%;
+    }
+}
+
+.questionnaireForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    > div {
+        align-self: stretch;
+    }
+}
+
+.formActions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    > button {
+        width: 100%;
+    }
+
+    .formActionBtnLabelWrap {
+        justify-content: center;
+        padding: 0.3rem 0;
+    }
+}

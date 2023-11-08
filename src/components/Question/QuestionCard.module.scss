@@ -1,0 +1,65 @@
+.questionCardWrap {
+    background: var(--white);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    // align-self: stretch;
+    > div {
+        // background-color: red;
+        width: 100%;
+        position: relative;
+
+        &:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: auto;
+            width: 100%;
+            height: 0;
+            border: 0.0625rem solid var(--fueled-white, #f5f5f1);
+            bottom: -1rem;
+        }
+    }
+}
+
+.ansSectionWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.ansInputText {
+    width: 100%;
+}
+
+// .questionCardWrap >
+.controlsWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .indexText {
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%; /* 1.09375rem */
+        opacity: 0.54;
+    }
+
+    .actionsWrap {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        align-items: flex-start;
+        gap: 0.625rem;
+
+        > div {
+            padding: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+$xxs: #{"screen and (min-width: 381px)"};
+$xs: #{"screen and (min-width: 480px)"};
+$sm: #{"screen and (min-width: 768px)"}; // Tablet min
+$sm-max-width: #{"screen and (max-width: 768px)"};
+$laptop: #{"screen and (min-width: 1024px)"};
+$laptop-lg: #{"screen and (min-width: 1440px)"};
+$laptop-lg-max-width: #{"screen and (max-width: 1440px)"};
+$md: #{"screen and (min-width: 1200px)"};
+$lg: #{"screen and (min-width: 1600px)"};
+$xl: #{"screen and (min-width: 1900px)"};
+$xxs-max-width: #{"screen and (max-width: 380px)"};
+$xxs-max: #{"screen and (max-width: 479px)"};
+$xs-max: #{"screen and (max-width: 767px)"}; // Mobile max
+$sm-max: #{"screen and (max-width: 1023px)"}; // Tablet max
+$md-max: #{"screen and (min-width: 1599px)"};

@@ -1,0 +1,53 @@
+@import "./breakpoints.scss";
+
+@import url("https://db.onlinewebfonts.com/c/110de0bbe7344f96136d5cedd6608f9d?family=GT+Cinetype+Regular");
+
+@font-face {
+    font-family: "GT Cinetype Regular";
+    src: url("https://db.onlinewebfonts.com/t/110de0bbe7344f96136d5cedd6608f9d.eot");
+    src:
+        url("https://db.onlinewebfonts.com/t/110de0bbe7344f96136d5cedd6608f9d.eot?#iefix") format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/110de0bbe7344f96136d5cedd6608f9d.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/110de0bbe7344f96136d5cedd6608f9d.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/110de0bbe7344f96136d5cedd6608f9d.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/110de0bbe7344f96136d5cedd6608f9d.svg#GT Cinetype Regular") format("svg");
+}
+
+body {
+    margin: 0;
+    line-height: normal;
+    background: var(--fueled-white, #f5f5f1);
+}
+:root {
+    /* fonts */
+    --fueled-h5: "GT Cinetype Regular";
+
+    /* font sizes */
+    --font-size-xs: 0.75rem;
+    --fueled-h5-size: 1.38rem;
+
+    /* Colors */
+    --fueled-red: #ae0000;
+    --color-whitesmoke: rgba(245, 245, 241, 0.2);
+    --fueled-white: #f5f5f1;
+    --fueled-dark-grey: #161616;
+    --color-gray-100: rgba(0, 0, 0, 0.1);
+    --black: #000;
+    --white: #fff;
+
+    /* Paddings */
+    --padding-5xs: 0.5rem;
+    --padding-base: 1rem;
+    --padding-11xs: 0.13rem;
+
+    /* Gaps */
+    --gap-7xs: 0.38rem;
+
+    @media #{$sm-max-width} {
+        font-size: 14px;
+    }
+}
+
+* {
+    font-family: var(--fueled-h5);
+}

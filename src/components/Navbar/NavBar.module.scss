@@ -1,0 +1,34 @@
+@import "./../../styles/breakpoints.scss";
+
+.navbar {
+  background-color: var(--fueled-red);
+  padding: 0.75rem 1.25rem 0.75rem 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoWrap {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 1.33594rem;
+  height: 1.60313rem;
+}
+
+.titleInput {
+  color: var(--white);
+  border: 0;
+  background-color: transparent;
+  font-weight: 700;
+  text-align: center;
+
+  @media #{$sm} {
+    font-size: var(--fueled-h5-size);
+  }
+}
